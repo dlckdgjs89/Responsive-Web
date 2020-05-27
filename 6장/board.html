@@ -7,23 +7,21 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="">
 <link rel="shortcut icon" href="images/favicon/favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="images/favicon/flat-design-touch.png">
+<link rel="apple-touch-icon-precomposed" href="images/icon/flat-design-touch.png">
 <script src="js/jquery.min.js"></script>
 <style>
 /* 모바일용 CSS */
 /* 기본 CSS */
-#wrap {
-    display:flex; /* 모든 환경에서 플렉서블 박스로 작동하게 됨 */
-    /* flex-flow: flex-direction(주축 배치 결정)과 flex-wrap(한줄, 여러줄 결정)을 합친 것  */ 
-    flex-flow:column nowrap; /* column: 박스를 위에서 아래로 배치함, nowrap: 박스를 한줄로 배치함, 모바일 환경에서 박스가 세로로 한줄씩 배치하게하는 설정 */
-    width:80%;
-    margin:0 auto;
-    max-width:1200px;
+#wrap{
+display:flex;
+flex-flow:column nowrap;
+width:80%;
+margin:0 auto;
+max-width:1200px;
 }
+
 #wrap section{
-    /* box-sizing:border-box : 이 옵션을 사용하면 컨텐츠의 width & height로 설정한 값에 패딩, 보더, 마진 값이 포함되어 만들어 진다.*/
-    /* box-sizing:border-box : 이 옵션을 사용하지 않은 일반 박스는 width & height로 설정한 값에 패딩, 보더 값이 포함된다. (마진 값이 포함되지 않는다.) */
-    box-sizing:border-box; 
+box-sizing:border-box;
 }
 
 /* 태블릿용 CSS */
@@ -33,16 +31,41 @@
 /* PC용 CSS */
 @media all and (min-width:960px){
 /* 기본 CSS */
-#wrap {
-    position:relative;
-    width:90%;
+#wrap{
+position:relative;
+width:90%;
 }
 }
 </style>
 </head>
 <body>
-    <div id="wrap">
-        
-    </div>
+	<div id="wrap">
+		<section class="info_section">
+            <ul class="info_list">
+                <li><a href="index.html"><img src="images/s_images/info_icon_01.png" alt""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_02.png" alt""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_03.png" alt""></a></li>
+                <li><a href=""><img src="images/s_images/info_icon_04.png" alt""></a></li>
+            </ul>
+        </section>
+        <header class="header">
+            <h1 class="logo">
+                <a href="index.html">flat<br>design</a>
+            </h1>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li><a href="index.html">홈</a><span class="sub_menu_toggle_btn">하위 메뉴 토클 버튼</span></li>
+                    <li><a href="introduce.html">플랫 디자인이란?</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="gallery.html">갤러리</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                    <li><a href="board.html">문의 사항</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+                </ul>
+            </nav>
+            <span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+		</header>	
+		
+		<footer class="footer">
+            <p>copyright&copy;2014.flat design blog all rights reserved.</p>
+        </footer>
+	</div>
 </body>
 </html>
